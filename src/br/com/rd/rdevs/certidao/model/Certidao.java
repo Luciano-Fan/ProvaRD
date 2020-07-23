@@ -1,8 +1,9 @@
 package br.com.rd.rdevs.certidao.model;
 
+import br.com.rd.rdevs.Registro;
 import br.com.rd.rdevs.contrato.model.Contrato;
 
-public abstract class Certidao  {
+public abstract class Certidao implements Registro {
 
     private static int identificador = 0;
     private int registroCertidao;
@@ -116,7 +117,8 @@ public abstract class Certidao  {
                 ", tipoCertidao = " ;
     }
 
-    public static void registrar(Certidao c){
-        System.out.println(c + " Carimbo de autenticidade");
+    @Override
+    public void registrar(Object o) {
+        System.out.println(o + " Carimbo de autenticidade");
     }
 }

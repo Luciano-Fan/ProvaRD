@@ -1,10 +1,12 @@
 package br.com.rd.rdevs.contrato.model;
 
 
+import br.com.rd.rdevs.Registro;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public abstract class Contrato  {
+public abstract class Contrato implements Registro {
     private static int identificador = 0;
     private int registroContrato;
     private HashSet <String> nomeEnvolvidos;
@@ -115,8 +117,11 @@ public abstract class Contrato  {
                 ;
     }
 
-    public static void registrar(Contrato c){
-        System.out.println(c + " Carimbo de autenticidade");
+
+    @Override
+    public void registrar(Object o) {
+        System.out.println(o + " Carimbo de autenticidade");
     }
+
 }
 
