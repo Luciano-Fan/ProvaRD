@@ -104,7 +104,7 @@ public abstract class Contrato  {
 
     @Override
     public String toString() {
-        return " registroContrato = " + registroContrato +
+        return "registroContrato = " + registroContrato +
                 ", nomeEnvolvidos =" + nomeEnvolvidos +
                 ", nomeTestemunhas =" + nomeTestemunhas +
                 ", dataEmissao ='" + dataEmissao + '\'' +
