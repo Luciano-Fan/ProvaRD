@@ -105,12 +105,12 @@ public abstract class Contrato  {
     @Override
     public String toString() {
         return "registroContrato = " + registroContrato +
-                ", nomeEnvolvidos =" + nomeEnvolvidos +
-                ", nomeTestemunhas =" + nomeTestemunhas +
-                ", dataEmissao ='" + dataEmissao + '\'' +
-                ", dataRegistro ='" + dataRegistro + '\'' +
-                ", nomeTabeliao ='" + nomeTabeliao + '\'' +
-                ", nomeCartorio ='" + nomeCartorio + '\'' +
+                ", nomeEnvolvidos = " + nomeEnvolvidos +
+                ", nomeTestemunhas = " + nomeTestemunhas +
+                ", dataEmissao = '" + dataEmissao + '\'' +
+                ", dataRegistro = '" + dataRegistro + '\'' +
+                ", nomeTabeliao = '" + nomeTabeliao + '\'' +
+                ", nomeCartorio = '" + nomeCartorio + '\'' +
                 ", tipoContrato = "
                 ;
     }
